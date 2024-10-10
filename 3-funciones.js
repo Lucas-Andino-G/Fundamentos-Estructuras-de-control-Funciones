@@ -16,8 +16,11 @@
 
 // 1.3 Crea una función llamada `esMayorDeEdad` que tome un número como parámetro y devuelva `true` si es mayor de 18, o `false` en caso contrario.
     function esMayorDeEdad(edad){
+        //Si la edad es mayor a 18
         if (edad > 18){
+            //Se retorna verdadero
             return true;
+        //Caso contrario se retorna falso
         } else {
             return false;
         }
@@ -70,8 +73,11 @@
 
 // 3.3 Crea una **function expression** llamada `esPar` que acepte un número como parámetro y devuelva `true` si el número es par, o `false` en caso contrario.
     const esPar = function (numero){
+        //Si el modulo del numero es igual a 0
         if (numero % 2 === 0){
+            //Se retorna verdadero
             return true;
+        //Caso contrario se retorna falso
         } else {
             return false;
         }
@@ -97,8 +103,11 @@ const calcularArea = radio => 3.14 * (radio ** 2)
 // 5. Recursividad
 // 5.1 Escribe una función que calcule la suma de los primeros n números enteros de forma recursiva. Por ejemplo: `suma(3) -> 1 + 2 + 3 = 6`
 function suma(n) {
+    //Si el numero es igual a 1
     if (n === 1){
+        //retornamos 1
         return 1;
+    //Caso contrario usamos la formula n + suma = n - 1
     } else {
         return n + suma(n - 1);
     }
@@ -107,8 +116,11 @@ function suma(n) {
 
 // 5.2 Escribe una función que calcule la sucesión de Fibonacci de forma recursiva. La sucesión de Fibonacci es una serie de números que empieza por 0 y 1 y cada número es la suma de los dos anteriores. Por ejemplo: `fibonacci(6) -> 8`
 function fibonacci(n){
+    //Si el numero es menor o igual a 1
     if (n <= 1){
+        //Retornamos el mismo numero
         return n;
+    //Caso contrario se retorna la siguiente operacion
     } else {
         return fibonacci (n - 1) + fibonacci(n - 2);
     }
@@ -118,8 +130,11 @@ function fibonacci(n){
 
 // 5.3 Crea una función recursiva llamada `factorial` que calcule el factorial de un número. El factorial de n (n!) es el producto de todos los números enteros positivos menores o iguales a n.
 function factorial(n) {
+    //Si el numero es igual a 1
     if (n === 1){
+        //Se retorna 1
         return 1;
+    //Sino se realiza la siguiente operacion
     } else {
         return n * factorial(n - 1)
     }
@@ -128,8 +143,11 @@ function factorial(n) {
 
 // 5.4 Escribe una función recursiva que calcule la potencia de un número dado el exponente. Por ejemplo: `potencia(2, 3) -> 8`
 function potencia(base, exponente) {
+    //Si el exponente de un numero es 0
     if (exponente === 0){
+        //Se retorna 1
         return 1;
+    //Caso contrario se retorna la operacion siguiente
     } else {
         return base * potencia (base, exponente - 1);
     }
