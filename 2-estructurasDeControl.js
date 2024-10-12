@@ -44,20 +44,12 @@ function cuentaRegresiva(numero) {
 // Instrucción: Escribe una función que imprima "Estoy aprendiendo JavaScript" 5 veces utilizando un bucle `do-while`.
 function repetirMensaje() {
     //Creo la variable respuesta
-    let respuesta;
-    //Defino 'i'
     let i = 0
-    do {
-        respuesta = confirm();
-        //mientras la respuesta sea true, el bucle no se rompera, caso contrario se sale del bucle
-    } while (respuesta){
-        //Mientras que i sea menor a 5
-        while (i < 5){
-            //Se va a sumar 1 a i e imprimo un mensaje de texto
-            i++
-            console.log('Estoy aprendiendo JavaScrip')
-        }
-    }
+    do{
+        //Este elementro se va a sumar cada vez que sea menor a 5
+        i++
+        console.log('Estoy aprendiendo JavaScript');
+    } while(i < 5)
     // Tu código aquí
 }
 
