@@ -23,7 +23,7 @@ function canBuyProduct() {
     let presupuesto = 1150
     let total = undefined
     //Luego calculo el descuento
-    descuento = producto * descuento
+    total = producto * descuento
     //Por ultimo verifico si el monto es suficiente para comprar el producto e imprimo el mensaje
     if (presupuesto > total){
         console.log("Puedes comprar el producto");
